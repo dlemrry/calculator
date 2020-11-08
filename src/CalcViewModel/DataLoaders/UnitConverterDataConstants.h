@@ -164,7 +164,11 @@ namespace CalculatorApp
             Data_Zetabits = UnitStart + 163,
             Data_Zetabytes = UnitStart + 164,
             Area_Pyeong = UnitStart + 165,
-            UnitEnd = Area_Pyeong
+            Length_ja = UnitStart + 166,
+            Length_chi = UnitStart + 167,
+            Length_gan = UnitStart + 168,
+            Length_ri = UnitStart + 169,
+            UnitEnd = Length_ri
         };
     }
 }

@@ -441,6 +441,15 @@ void UnitConverterDataLoader::GetUnits(_In_ unordered_map<ViewMode, vector<Order
                                        false,
                                        false,
                                        true });
+    lengthUnits.push_back(OrderedUnit{
+        UnitConverterUnits::Length_ja, GetLocalizedStringName(L"UnitName_ja"), GetLocalizedStringName(L"UnitAbbreviation_ja"), 15 });
+    lengthUnits.push_back(OrderedUnit{
+        UnitConverterUnits::Length_chi, GetLocalizedStringName(L"UnitName_chi"), GetLocalizedStringName(L"UnitAbbreviation_chi"), 16 });
+    lengthUnits.push_back(OrderedUnit{
+        UnitConverterUnits::Length_gan, GetLocalizedStringName(L"UnitName_gan"), GetLocalizedStringName(L"UnitAbbreviation_gan"), 17 });
+    lengthUnits.push_back(OrderedUnit{
+        UnitConverterUnits::Length_ri, GetLocalizedStringName(L"UnitName_ri"), GetLocalizedStringName(L"UnitAbbreviation_ri"), 18 });
+    
     unitMap.emplace(ViewMode::Length, lengthUnits);
 
     vector<OrderedUnit> powerUnits;
@@ -851,6 +860,10 @@ void UnitConverterDataLoader::GetConversionData(_In_ unordered_map<ViewMode, uno
                                                    { ViewMode::Length, UnitConverterUnits::Length_Paperclip, 0.035052 },
                                                    { ViewMode::Length, UnitConverterUnits::Length_Hand, 0.18669 },
                                                    { ViewMode::Length, UnitConverterUnits::Length_JumboJet, 76 },
+                                                   { ViewMode::Length, UnitConverterUnits::Length_ja, 0.30303030 },
+                                                   { ViewMode::Length, UnitConverterUnits::Length_chi, 0.030303030 },
+                                                   { ViewMode::Length, UnitConverterUnits::Length_gan, 1.8181818 },
+                                                   { ViewMode::Length, UnitConverterUnits::Length_ri, 654.545448 },
 
                                                    { ViewMode::Power, UnitConverterUnits::Power_BritishThermalUnitPerMinute, 17.58426666666667 },
                                                    { ViewMode::Power, UnitConverterUnits::Power_FootPoundPerMinute, 0.0225969658055233 },
